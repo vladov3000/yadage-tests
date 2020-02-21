@@ -1,0 +1,2 @@
+2020-01-24 08:31:34,872 |       pack.hello.run |   INFO | starting file logging for topic: run
+2020-01-24 08:31:36,380 |       pack.hello.run |   INFO | b'hello WORLD'

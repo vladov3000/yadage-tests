@@ -1,0 +1,5 @@
+2020-02-07 16:49:04,994 | pack.hello_world.ste |   INFO | starting file logging for topic: step
+2020-02-07 16:49:05,041 | pack.hello_world.ste |   INFO | changing to workdirectory /Users/vlad/Documents/EPEprojects/yadage-tests/local-helloword/workdir/hello_world
+2020-02-07 16:49:05,042 | pack.hello_world.ste |   INFO | running ['sh', '-c', 'echo Hello  | tee /Users/vlad/Documents/EPEprojects/yadage-tests/local-helloword/workdir/hello_world/hello_world.txt']
+2020-02-07 16:49:05,061 | pack.hello_world.ste |   INFO | changing back to original directory /Users/vlad/Documents/EPEprojects/yadage-tests/local-helloword
+2020-02-07 16:49:05,077 | pack.hello_world.ste |   INFO | publishing data: <TypedLeafs: {'outputfile': '/Users/vlad/Documents/EPEprojects/yadage-tests/local-helloword/workdir/hello_world/hello_world.txt'}>

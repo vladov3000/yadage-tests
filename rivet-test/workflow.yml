@@ -1,0 +1,11 @@
+stages:
+  - name: rivet
+    dependencies: ['init']
+    scheduler:
+      scheduler_type: 'singlestep-stage'
+      parameters:
+        output_interface: {step: init, output: output_interface}
+        output_path: '{workdir}/output'
+        hepmc: {step: init, output: input}
+        analysis: {step: init, output: analysis}
+      step: {$ref: 'step.yml'}

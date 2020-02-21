@@ -1,0 +1,12 @@
+process:
+  process_type: interpolated-script-cmd
+  script: |
+    rivet -a {analysis} -H {yoda} {hepmc}
+publisher:
+  publisher_type: 'interpolated-pub'
+  publish:
+    yoda: '{yoda}'
+environment:
+  environment_type: 'docker-encapsulated'
+  image: recast/rivet
+  imagetag: latest

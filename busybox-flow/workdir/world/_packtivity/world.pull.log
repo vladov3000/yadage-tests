@@ -1,0 +1,5 @@
+2020-01-24 08:31:37,172 |      pack.world.pull |   INFO | starting file logging for topic: pull
+2020-01-24 08:31:38,628 |      pack.world.pull |   INFO | b'latest: Pulling from library/busybox'
+2020-01-24 08:31:39,021 |      pack.world.pull |   INFO | b'Digest: sha256:6915be4043561d64e0ab0f8f098dc2ac48e077fe23f488ac24b665166898115a'
+2020-01-24 08:31:39,022 |      pack.world.pull |   INFO | b'Status: Image is up to date for busybox:latest'
+2020-01-24 08:31:39,022 |      pack.world.pull |   INFO | b'docker.io/library/busybox:latest'

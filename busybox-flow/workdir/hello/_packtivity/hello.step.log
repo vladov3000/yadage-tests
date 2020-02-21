@@ -1,0 +1,52 @@
+2020-01-24 08:31:32,337 |      pack.hello.step |   INFO | starting file logging for topic: step
+2020-01-24 08:31:32,400 |      pack.hello.step |  DEBUG | 
+--------------
+running one liner in container.
+command: echo hello WORLD | tee /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/hello.txt
+--------------
+    
+2020-01-24 08:31:32,401 |      pack.hello.step |  DEBUG | 
+--------------
+run in docker container image: busybox
+with env: default env
+resources: []
+--------------
+    
+2020-01-24 08:31:32,401 |      pack.hello.step |  DEBUG | do_auth: False do_cvmfs: False
+2020-01-24 08:31:32,401 |      pack.hello.step |  DEBUG | rspec is
+{
+    "mounts": [
+        {
+            "type": "bind",
+            "source": "/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello",
+            "destination": "/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello",
+            "readonly": false
+        }
+    ],
+    "image": "busybox:latest",
+    "workdir": null,
+    "argv": [
+        "sh",
+        "-c",
+        "echo hello WORLD | tee /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/hello.txt"
+    ],
+    "stdin": null,
+    "tty": false
+}
+2020-01-24 08:31:32,402 |      pack.hello.step |  DEBUG | command: 
+docker pull busybox:latest
+2020-01-24 08:31:32,402 |      pack.hello.step |  DEBUG | stdin if any: None
+2020-01-24 08:31:32,405 |      pack.hello.step |  DEBUG | started subprocess with pid 7436. now wait to finish
+2020-01-24 08:31:32,910 |      pack.hello.step |  DEBUG | process children: [psutil.Process(pid=7437, name='docker-credential-desktop', started='08:31:32'), psutil.Process(pid=7439, name='docker-credential-osxkeychain', started='08:31:32')]
+2020-01-24 08:31:34,870 |      pack.hello.step |  DEBUG | container execution subprocess finished. return code: 0
+2020-01-24 08:31:34,870 |      pack.hello.step |  DEBUG | moving on from subprocess execution: docker pull busybox:latest
+2020-01-24 08:31:34,871 |      pack.hello.step |  DEBUG | finally for docker pull busybox:latest
+2020-01-24 08:31:34,871 |      pack.hello.step |  DEBUG | command: 
+docker run --rm   --cidfile /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/_packtivity/hello.cid     -v /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:rw busybox:latest sh -c 'echo hello WORLD | tee /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/hello.txt'
+2020-01-24 08:31:34,871 |      pack.hello.step |  DEBUG | stdin if any: None
+2020-01-24 08:31:34,876 |      pack.hello.step |  DEBUG | started subprocess with pid 7442. now wait to finish
+2020-01-24 08:31:35,384 |      pack.hello.step |  DEBUG | process children: []
+2020-01-24 08:31:37,004 |      pack.hello.step |  DEBUG | container execution subprocess finished. return code: 0
+2020-01-24 08:31:37,005 |      pack.hello.step |  DEBUG | moving on from subprocess execution: docker run --rm   --cidfile /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/_packtivity/hello.cid     -v /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:rw busybox:latest sh -c 'echo hello WORLD | tee /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/hello.txt'
+2020-01-24 08:31:37,005 |      pack.hello.step |  DEBUG | finally for docker run --rm   --cidfile /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/_packtivity/hello.cid     -v /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:rw busybox:latest sh -c 'echo hello WORLD | tee /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/hello.txt'
+2020-01-24 08:31:37,015 |      pack.hello.step |   INFO | publishing data: <TypedLeafs: {'filename': '/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/hello.txt', 'hellopar': 'WORLD'}>

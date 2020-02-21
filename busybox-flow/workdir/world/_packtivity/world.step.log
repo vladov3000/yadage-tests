@@ -1,0 +1,58 @@
+2020-01-24 08:31:37,097 |      pack.world.step |   INFO | starting file logging for topic: step
+2020-01-24 08:31:37,170 |      pack.world.step |  DEBUG | 
+--------------
+running one liner in container.
+command: (cat /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/hello.txt; echo HELLO WORLD) | tee /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world/world.txt
+--------------
+    
+2020-01-24 08:31:37,170 |      pack.world.step |  DEBUG | 
+--------------
+run in docker container image: busybox
+with env: default env
+resources: []
+--------------
+    
+2020-01-24 08:31:37,170 |      pack.world.step |  DEBUG | do_auth: False do_cvmfs: False
+2020-01-24 08:31:37,171 |      pack.world.step |  DEBUG | rspec is
+{
+    "mounts": [
+        {
+            "type": "bind",
+            "source": "/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world",
+            "destination": "/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world",
+            "readonly": false
+        },
+        {
+            "type": "bind",
+            "source": "/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello",
+            "destination": "/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello",
+            "readonly": false
+        }
+    ],
+    "image": "busybox:latest",
+    "workdir": null,
+    "argv": [
+        "sh",
+        "-c",
+        "(cat /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/hello.txt; echo HELLO WORLD) | tee /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world/world.txt"
+    ],
+    "stdin": null,
+    "tty": false
+}
+2020-01-24 08:31:37,171 |      pack.world.step |  DEBUG | command: 
+docker pull busybox:latest
+2020-01-24 08:31:37,171 |      pack.world.step |  DEBUG | stdin if any: None
+2020-01-24 08:31:37,175 |      pack.world.step |  DEBUG | started subprocess with pid 7446. now wait to finish
+2020-01-24 08:31:37,681 |      pack.world.step |  DEBUG | process children: []
+2020-01-24 08:31:39,024 |      pack.world.step |  DEBUG | container execution subprocess finished. return code: 0
+2020-01-24 08:31:39,024 |      pack.world.step |  DEBUG | moving on from subprocess execution: docker pull busybox:latest
+2020-01-24 08:31:39,024 |      pack.world.step |  DEBUG | finally for docker pull busybox:latest
+2020-01-24 08:31:39,025 |      pack.world.step |  DEBUG | command: 
+docker run --rm   --cidfile /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world/_packtivity/world.cid     -v /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world:/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world:rw -v /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:rw busybox:latest sh -c '(cat /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/hello.txt; echo HELLO WORLD) | tee /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world/world.txt'
+2020-01-24 08:31:39,025 |      pack.world.step |  DEBUG | stdin if any: None
+2020-01-24 08:31:39,030 |      pack.world.step |  DEBUG | started subprocess with pid 7451. now wait to finish
+2020-01-24 08:31:39,536 |      pack.world.step |  DEBUG | process children: []
+2020-01-24 08:31:40,325 |      pack.world.step |  DEBUG | container execution subprocess finished. return code: 0
+2020-01-24 08:31:40,325 |      pack.world.step |  DEBUG | moving on from subprocess execution: docker run --rm   --cidfile /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world/_packtivity/world.cid     -v /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world:/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world:rw -v /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:rw busybox:latest sh -c '(cat /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/hello.txt; echo HELLO WORLD) | tee /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world/world.txt'
+2020-01-24 08:31:40,325 |      pack.world.step |  DEBUG | finally for docker run --rm   --cidfile /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world/_packtivity/world.cid     -v /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world:/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world:rw -v /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:/Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello:rw busybox:latest sh -c '(cat /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/hello/hello.txt; echo HELLO WORLD) | tee /Users/vlad/Documents/EPEprojects/yadage-tests/busybox-flow/workdir/world/world.txt'
+2020-01-24 08:31:40,335 |      pack.world.step |   INFO | publishing data: <TypedLeafs: {'worldpar': 'HELLO'}>

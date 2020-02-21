@@ -1,0 +1,26 @@
+stages:
+  - dependencies:
+    - init
+    name: rivet
+    scheduler:
+      parameters:
+        analysis:
+          output: analysis_id
+          step: init
+        hepmc:
+          output: hepmc
+          step: init
+        outputyoda: "{workdir}/rivet_analysis.yoda"
+      scheduler_type: singlestep-stage
+      step:
+        environment:
+          environment_type: docker-encapsulated
+          image: recast/rivet
+          imagetag: 'latest'
+        process:
+          process_type: string-interpolated-cmd
+          script: 'rivet -a {analysis} -H {yoda} {hepmc}'
+        publisher:
+          publish:
+            yoda: outputyoda
+          publisher_type: interpolated-pub
