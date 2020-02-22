@@ -5,7 +5,7 @@ stages:
     scheduler:
       parameters:
         analysis:
-          output: analysis_id
+          output: analysis
           step: init
         hepmc:
           output: hepmc
@@ -19,7 +19,7 @@ stages:
           imagetag: 'latest'
         process:
           process_type: string-interpolated-cmd
-          script: 'rivet -a {analysis} -H {yoda} {hepmc}'
+          cmd: 'rivet -a {analysis} -H {outputyoda} {hepmc}'
         publisher:
           publish:
             yoda: outputyoda
