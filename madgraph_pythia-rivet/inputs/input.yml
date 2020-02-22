@@ -1,4 +1,4 @@
 proc_card: 'proc_card_dm.dat'
 n_events: 1000
-analysis_id: 1458270
+analysis: ATLAS_2016_I1458270
 hepmc: 'output.hepmc'
