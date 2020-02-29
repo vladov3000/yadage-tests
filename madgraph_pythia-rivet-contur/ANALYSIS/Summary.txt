@@ -1,0 +1,13 @@
+Run Information 
+Contur is running in /contur/local on analysis objects in ['rivet_analysis.yoda']
+Excluding Higgs to WW measurements 
+Building all available data correlations, combining bins where possible 
+Building default background model from data, ignoring optional theory predictions (excluding ratios) 
+
+Parameter values not known for this run.
+Combined exclusion for these plots is 97.85 % 
+
+pools
+ATLAS_13_METJET
+0.97852174284
+/ATLAS_2016_I1458270/2jm

@@ -1,0 +1,44 @@
+# BEGIN PLOT
+DrawOnly=/REF/ATLAS_2016_I1458270/6jm /rivet_analysis.yoda/ATLAS_2016_I1458270/6jm /THY/ATLAS_2016_I1458270/6jm
+RatioPlotReference=/REF/ATLAS_2016_I1458270/6jm
+RatioPlot=1
+LogY=1
+MainPlot=1
+RatioPlotSameStyle=0
+RatioPlotErrorBandColor=Yellow
+Legend=1
+RatioPlotYMin=0
+# END PLOT
+
+# BEGIN HISTO1D /THY/ATLAS_2016_I1458270/6jm
+ErrorBandColor=green
+ErrorBandOpacity=0.3
+ErrorBands=1
+ErrorBars=1
+LineColor=green
+Path=/THY/ATLAS_2016_I1458270/6jm
+Title=6jm
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+00	7.018260e+00	1.819084e+00	2.198361e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /REF/ATLAS_2016_I1458270/6jm
+ConnectBins=0
+ErrorBars=1
+Path=/REF/ATLAS_2016_I1458270/6jm
+PolyMarkers=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+00	4.000000e+00	4.000000e+00	4.000000e+00
+# END HISTO1D
+
+
+# BEGIN HISTO1D /rivet_analysis.yoda/ATLAS_2016_I1458270/6jm
+LineColor=red
+Path=/rivet_analysis.yoda/ATLAS_2016_I1458270/6jm
+Title=No exclusion
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	1.000000e+00	4.000000e+00	4.000000e+00	4.000000e+00
+# END HISTO1D
+
