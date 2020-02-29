@@ -1,5 +1,0 @@
-2020-02-21 20:40:41,734 |      pack.rivet.pull |   INFO | starting file logging for topic: pull
-2020-02-21 20:40:43,125 |      pack.rivet.pull |   INFO | b'latest: Pulling from recast/rivet'
-2020-02-21 20:40:43,126 |      pack.rivet.pull |   INFO | b'Digest: sha256:e1a3c0633b3cd48268ac0db7a99ca31c922f9cc718056a36c03cc7a83243e8d3'
-2020-02-21 20:40:43,126 |      pack.rivet.pull |   INFO | b'Status: Image is up to date for recast/rivet:latest'
-2020-02-21 20:40:43,127 |      pack.rivet.pull |   INFO | b'docker.io/recast/rivet:latest'
