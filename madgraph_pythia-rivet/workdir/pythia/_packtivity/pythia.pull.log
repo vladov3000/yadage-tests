@@ -1,0 +1,5 @@
+2020-02-21 20:40:01,996 |     pack.pythia.pull |   INFO | starting file logging for topic: pull
+2020-02-21 20:40:03,283 |     pack.pythia.pull |   INFO | b'2.6.6: Pulling from recast/madgraph-pythia'
+2020-02-21 20:40:03,284 |     pack.pythia.pull |   INFO | b'Digest: sha256:3935b8d7c13c38a25ec6fef4b4875a949200c3aee8101e7ca73290cf82b21bf1'
+2020-02-21 20:40:03,284 |     pack.pythia.pull |   INFO | b'Status: Image is up to date for recast/madgraph-pythia:2.6.6'
+2020-02-21 20:40:03,285 |     pack.pythia.pull |   INFO | b'docker.io/recast/madgraph-pythia:2.6.6'

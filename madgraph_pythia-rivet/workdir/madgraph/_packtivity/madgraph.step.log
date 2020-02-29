@@ -1,0 +1,58 @@
+2020-02-21 20:39:40,752 |   pack.madgraph.step |   INFO | starting file logging for topic: step
+2020-02-21 20:39:40,824 |   pack.madgraph.step |  DEBUG | 
+--------------
+running one liner in container.
+command: python steer_madgraph.py /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs/proc_card_dm.dat /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph/events.lhe -n 1000
+--------------
+    
+2020-02-21 20:39:40,825 |   pack.madgraph.step |  DEBUG | 
+--------------
+run in docker container image: recast/madgraph
+with env: default env
+resources: []
+--------------
+    
+2020-02-21 20:39:40,825 |   pack.madgraph.step |  DEBUG | do_auth: False do_cvmfs: False
+2020-02-21 20:39:40,825 |   pack.madgraph.step |  DEBUG | rspec is
+{
+    "mounts": [
+        {
+            "type": "bind",
+            "source": "/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph",
+            "destination": "/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph",
+            "readonly": false
+        },
+        {
+            "type": "bind",
+            "source": "/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs",
+            "destination": "/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs",
+            "readonly": false
+        }
+    ],
+    "image": "recast/madgraph:2.6.7_v2",
+    "workdir": null,
+    "argv": [
+        "sh",
+        "-c",
+        "python steer_madgraph.py /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs/proc_card_dm.dat /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph/events.lhe -n 1000"
+    ],
+    "stdin": null,
+    "tty": false
+}
+2020-02-21 20:39:40,825 |   pack.madgraph.step |  DEBUG | command: 
+docker pull recast/madgraph:2.6.7_v2
+2020-02-21 20:39:40,826 |   pack.madgraph.step |  DEBUG | stdin if any: None
+2020-02-21 20:39:40,829 |   pack.madgraph.step |  DEBUG | started subprocess with pid 87069. now wait to finish
+2020-02-21 20:39:41,336 |   pack.madgraph.step |  DEBUG | process children: []
+2020-02-21 20:39:42,266 |   pack.madgraph.step |  DEBUG | container execution subprocess finished. return code: 0
+2020-02-21 20:39:42,266 |   pack.madgraph.step |  DEBUG | moving on from subprocess execution: docker pull recast/madgraph:2.6.7_v2
+2020-02-21 20:39:42,266 |   pack.madgraph.step |  DEBUG | finally for docker pull recast/madgraph:2.6.7_v2
+2020-02-21 20:39:42,267 |   pack.madgraph.step |  DEBUG | command: 
+docker run --rm   --cidfile /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph/_packtivity/madgraph.cid     -v /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph:/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph:rw -v /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs:/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs:rw recast/madgraph:2.6.7_v2 sh -c 'python steer_madgraph.py /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs/proc_card_dm.dat /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph/events.lhe -n 1000'
+2020-02-21 20:39:42,267 |   pack.madgraph.step |  DEBUG | stdin if any: None
+2020-02-21 20:39:42,271 |   pack.madgraph.step |  DEBUG | started subprocess with pid 87073. now wait to finish
+2020-02-21 20:39:42,778 |   pack.madgraph.step |  DEBUG | process children: []
+2020-02-21 20:40:01,853 |   pack.madgraph.step |  DEBUG | container execution subprocess finished. return code: 0
+2020-02-21 20:40:01,854 |   pack.madgraph.step |  DEBUG | moving on from subprocess execution: docker run --rm   --cidfile /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph/_packtivity/madgraph.cid     -v /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph:/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph:rw -v /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs:/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs:rw recast/madgraph:2.6.7_v2 sh -c 'python steer_madgraph.py /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs/proc_card_dm.dat /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph/events.lhe -n 1000'
+2020-02-21 20:40:01,854 |   pack.madgraph.step |  DEBUG | finally for docker run --rm   --cidfile /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph/_packtivity/madgraph.cid     -v /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph:/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph:rw -v /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs:/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs:rw recast/madgraph:2.6.7_v2 sh -c 'python steer_madgraph.py /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/inputs/proc_card_dm.dat /Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph/events.lhe -n 1000'
+2020-02-21 20:40:01,864 |   pack.madgraph.step |   INFO | publishing data: <TypedLeafs: {'lhefile': '/Users/vlad/Documents/EPEprojects/yadage-tests/madgraph_pythia-rivet/workdir/madgraph/events.lhe'}>

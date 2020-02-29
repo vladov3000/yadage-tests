@@ -69,11 +69,11 @@ stages:
             yoda: outputyoda
           publisher_type: interpolated-pub
   - dependencies:
-      - rivet
+    - init
     name: contur
     scheduler:
       parameters:
-        inputyoda: {output: yoda, step: rivet}
+        inputyoda: {output: yoda, step: init}
         output_analysis: "{workdir}/ANALYSIS"
         output_plots: "{workdir}/plots"
       scheduler_type: singlestep-stage
@@ -86,7 +86,9 @@ stages:
           process_type: interpolated-script-cmd
           script: |
             source ./setupContur.sh
-            contur -f {inputyoda}
+            contur {inputyoda}
+            cp -r ./ANALYSIS {output_analysis}
+            cp -r ./plots {output_plots}
         publisher:
           publish:
             analysis: output_analysis
