@@ -1,4 +1,3 @@
 rm -r workdir
-yadage-run workdir workflows/simple_contur.yml inputs/input.yml -d initdir=$PWD/inputs
-echo Contur Run Summary:
-cat workdir/contur/ANALYSIS/Summary.txt
+WORKFLOW=${1:-workflows/workflow.yml}
+yadage-run workdir $WORKFLOW inputs/input.yml -d initdir=$PWD/inputs

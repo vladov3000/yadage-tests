@@ -1,2 +1,3 @@
 rm -r workdir
-yadage-run workdir workflows/workflow.yml inputs/input.yml -d initdir=$PWD/inputs
+WORKFLOW=${1:-workflows/workflow.yml}
+yadage-run workdir $WORKFLOW inputs/input.yml -d initdir=$PWD/inputs
